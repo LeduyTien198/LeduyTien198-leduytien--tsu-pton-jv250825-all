@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            text-align: center;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        img {
+            height: 100px;
+            right: 110px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="../../anhvd/anhbo.jpg" alt="ảnh bơ"></td>
+                <td>Bơ</td>
+                <td>&#36;1 ea.</td>
+            </tr>
+            <tr>
+                <td><img src="../../anhvd/anhvai.jpg" alt="ảnh vải"></td>
+                <td>Vải</td>
+                <td>&#36;0.75/lb</td>
+            </tr>
+            <tr>
+                <td><img src="../../anhvd/anhnho.jpg" alt="ảnh nho"></td>
+                <td>Nho</td>
+                <td>3 for &#36;5</td>
+            </tr>
+            <tr>
+                <td><img src="../../anhvd/anhquaoi.jpg" alt="ảnh ổi"></td>
+                <td>Ổi</td>
+                <td>&#36;3 a head</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <form action="" method="post">
+        <h3><b>Booking</b> Form</h3><br>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username"><br><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="useremail"><br><br>
+
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone"><br><br>
+
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date">
+        <br><br>
+        <label for="time">Time</label>
+        <input type="time" name="time" id="time">
+        <br><br>
+        <label for="guests">Number of guests</label>
+        <input type="number" name="" id="guests">
+        <br><br>
+        <button type="submit">submit</button>
+    </form>
+    <br><br>
+
+
+
+    <form action="" method="get">
+        <h3>CAR PURCHARSE FORM</h3>
+        <br>
+        <label for="username">Name:</label>
+        <input type="text" name="username" id="username"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"><br><br>
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone"><br><br>
+
+        <label for="acar">Choore a Car:</label>
+        <select name="acar" id="acar">
+            <option value="model1">Model 1</option>
+            <option value="model2">Model 2</option>
+            <option value="model3">Model 3</option>
+            <option value="model4">Model 4</option>
+        </select><br><br>
+
+        <label for="color">Choore a Color</label>
+        <select name="color" id="color">
+            <option value="color1">Color 1</option>
+            <option value="color2">Color 2</option>
+            <option value="color3">Color 3</option>
+            <option value="color4">Color 4</option>
+        </select><br><br>
+
+        <label for="quantiny">Quantiny</label>
+        <input type="number" name="quantiny" id="quantiny" min="1" value="1">
+        <br><br>
+        <label for="date">Delivery Date :</label>
+        <input type="date" name="date" id="date"><br><br>
+        <button type="submit">submit</button>
+    </form>
+</body>
+
+</html>
