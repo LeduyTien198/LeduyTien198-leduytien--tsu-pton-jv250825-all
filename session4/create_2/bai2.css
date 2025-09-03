@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.home {
+    padding: 15px;
+    background-color: black;
+}
+
+.home-title {
+    text-align: center;
+    justify-self: center;
+    background-color: darkgrey;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width: 100%;
+}
