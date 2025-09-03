@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    padding-bottom: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    gap: 10px;
+    padding-left: 30px;
+}
+
+textarea,
+input {
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: chartreuse;
+    border-radius: 3px;
+    border: none;
+}
