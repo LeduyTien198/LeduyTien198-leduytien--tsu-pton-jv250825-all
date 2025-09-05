@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div {
+        .box {
             background-color: rgb(38, 38, 249);
             color: white;
             width: 200px;
@@ -16,17 +16,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            transition: background-color 1s ease;
         }
 
-        div:hover {
-            transition: opacity 1s ease-in;
-            background-color: rgb(108, 108, 215);
+        .box:hover {
+            background-color: rgb(59, 59, 171);
         }
     </style>
 </head>
 
 <body>
-    <div>Fade in</div>
+    <div class="box">Fade in</div>
 </body>
 
 </html>
