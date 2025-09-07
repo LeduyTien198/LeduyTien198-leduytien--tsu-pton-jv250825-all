@@ -1,0 +1,152 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto";
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .box-1 {
+            width: 40%;
+            padding-left: 20px;
+            display: block;
+
+        }
+
+        .box-1 h2 {
+            border-left: 5px solid orange;
+            padding-left: 10px;
+        }
+
+        .images-1 {
+            display: flex;
+            height: 500px;
+        }
+
+        .box-title-1 {
+            width: 100%;
+            margin: 15px 0;
+            padding: 30px 0;
+
+        }
+
+        .box-title-1 a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .box-title-1 ul li {
+            list-style: none;
+            padding-bottom: 20px;
+        }
+
+        .box-title-1 li {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .box-title-1 p {
+            padding: 20px 0;
+        }
+
+        .title-1 {
+            padding: 30px 0;
+        }
+
+        .box-2 {
+            display: block;
+            padding-left: 20px;
+            width: 27%;
+        }
+
+        .images-2 {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .images-2 {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .images-2 img {
+            width: 100%;
+            display: block;
+        }
+
+        .images-2 h3 {
+            position: absolute;
+            bottom: 20px;
+            left: 10px;
+            right: 10px;
+            color: white;
+            font-size: 28px;
+        }
+
+        .box-title-2 {
+            width: 100%
+        }
+
+        .box-title-2 li {
+            list-style: none;
+        }
+
+        .box-title-2 a {
+            text-decoration: none;
+        }
+
+        .box-title-2 {
+            padding: 30px 0;
+        }
+
+        .box-title-2 h4 {
+            color: black;
+        }
+
+        .box-3 {
+            background-color: rgba(91, 104, 116, 0.1);
+            display: flex;
+            gap: 30px;
+            width: 90%;
+        }
+
+        .images-3 {
+            width: 40%;
+            padding: 30px 30px;
+        }
+
+        .images-3 img {
+            height: 270px;
+        }
+
+        .box-title-3 {
+            padding-top: 30px;
+        }
+
+        .content-li {
+            list-style: none;
+        }
+
+        .content-li a {
+            text-decoration: none;
+            padding: 20px 30px;
+            color: black;
+        }
+
+        .link-title {
+            padding-right: 20px;
+        }
+
+        .source-tag {
+            padding-top: 20px;
+        }
+
+        .source-tag a {
+
+            text-decoration: none;
+            color: black;
+        }
