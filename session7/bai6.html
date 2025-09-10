@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(16, 17, 17);
+            color: white;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .list>a {
+            color: aliceblue;
+            text-decoration: none;
+            margin: 20px;
+
+        }
+
+
+        /*  header ----- end */
+        .main {
+            height: 500px;
+            width: 100%;
+        }
+
+        .section {
+            margin-left: 50px;
+            display: block;
+            margin-right: 50%;
+        }
+
+        .section-1 {
+            padding: 10px 25px;
+            background-color: rgba(134, 152, 168, 0.5);
+        }
+
+        .section-1 a {
+            text-decoration: none;
+            color: blue;
+
+        }
+
+        .section-2 {
+            padding: 10px 25px;
+            background-color: rgba(134, 152, 168, 0.3);
+        }
+
+        .footer {
+            margin-top: 20px;
+            height: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            color: white;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- head -->
+
+    <header class="header">
+        <div class="logo">
+            <h1>my blog</h1>
+        </div>
+        <div class="list">
+            <a href="">home</a>
+            <a href="">about</a>
+            <a href="">posts</a>
+            <a href="">contact</a>
+        </div>
+    </header>
+
+
+
+    <!-- main -->
+    <main class="main">
+        <section class="section">
+            <div class="section-1">
+                <h3>Bài viết nổi bật</h3>
+                <h4>Tiêu đề bài viết chính</h4>
+                <p> Lorem ipsum dolor sit amet.
+                </p>
+                <p><a href="">đọc thêm</a></p>
+            </div>
+            <div class="section-2">
+                <h3>Các bài viết khác</h3>
+                <h4>Bài viết 1</h4>
+                <p> Lorem ipsum dolor sit amet.
+                </p>
+                <h4>Bài viết 2</h4>
+                <p> Lorem ipsum dolor sit amet.
+                </p>
+                <h4>Bài viết 3</h4>
+                <p> Lorem ipsum dolor sit amet.
+                </p>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- end -->
+
+    <footer class="footer">
+        <p>&copy; 2025 my blog all</p>
+    </footer>
+</body>
+
+</html>

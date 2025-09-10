@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: aqua;
+            height: 30px;
+            width: 100%;
+            padding-left: 20px;
+            line-height: 30px;
+            color: rgb(125, 59, 59)
+        }
+
+        .main {
+            display: flex;
+            height: 500px;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .box:nth-child(1) {
+            background-color: green;
+            width: 40%;
+
+        }
+
+        .box:nth-child(1) p {
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+
+        .box:nth-child(2) {
+            background-color: rgb(128, 126, 0);
+            flex: 1;
+        }
+
+        .box:nth-child(2) p {
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+
+        .footer {
+            margin-top: 10px;
+            background-color: aquamarine;
+            color: black;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .footer p {
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <head class="head">
+        <div class="header">
+            <p>header</p>
+        </div>
+    </head>
+    <main class="main">
+        <div class="box">
+            <p>Sidebar</p>
+        </div>
+
+        <div class="box">
+            <p>Content</p>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>footer</p>
+    </footer>
+</body>
+
+</html>
