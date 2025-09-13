@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            height: 50px;
+            background-color: black;
+            color: aliceblue;
+            align-items: center;
+            padding: 0 20px;
+
+        }
+
+        .list a {
+            text-decoration: none;
+            margin-left: 20px;
+            color: rgb(248, 250, 251);
+        }
+
+        .main {
+            height: 400px;
+            width: 100%;
+            background-color: rgba(62, 62, 59, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+
+        .section {
+            margin: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .title {
+            background-color: rgba(62, 62, 59, 0.2);
+            width: calc(50% - 20px);
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .on {
+            width: calc(100% - 20px);
+        }
+
+        @media screen and (max-width: 1024px) {
+            .title {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <div class="">logo</div>
+        </div>
+        <div class="list">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="content">
+            1024 x 400
+        </div>
+    </main>
+    <section class="section">
+        <div class="title">Giới thiệu 1</div>
+        <div class="title">Giới thiệu 1</div>
+        <div class="title on">Giới thiệu 1</div>
+    </section>
+</body>
+
+</html>

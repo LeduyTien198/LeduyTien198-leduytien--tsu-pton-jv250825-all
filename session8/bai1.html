@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .box {
+            background-color: aqua;
+            color: black;
+            height: 50px;
+            width: calc(50% - 20px);
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .max {
+            width: calc(100% - 20px);
+        }
+
+        @media screen and (max-width: 1024px) {
+            .box {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">khoi 1</div>
+        <div class="box">khoi 2</div>
+        <div class="box max">khoi 3</div>
+    </div>
+</body>
+
+</html>
