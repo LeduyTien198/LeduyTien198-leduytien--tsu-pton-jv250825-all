@@ -1,0 +1,409 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+
+
+ .header-flex {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 70px;
+
+     background-color: aliceblue;
+ }
+
+ .logo {
+
+     padding-left: 100px;
+ }
+
+ .logo img {
+     width: 150px;
+
+ }
+
+ .header-right {
+     display: flex;
+     padding-right: 30px;
+ }
+
+ .logo {
+     display: flex;
+     font-size: 24px;
+     justify-content: center;
+     align-items: center;
+ }
+
+
+
+ .header-right img {
+     height: 30px;
+     width: 30px;
+     border-radius: 50%;
+ }
+
+ .header-right {
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+ }
+
+ .account {
+     border-left: 1px solid rgba(39, 36, 36, 0.2);
+     padding-left: 10px;
+     display: inline-flex;
+     align-items: center;
+     gap: 5px;
+
+ }
+
+ .account:hover {
+     background: #f3f6fb;
+ }
+
+ .account .arrow {
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+
+ }
+
+ .class h3 {
+     margin-bottom: 20px;
+ }
+
+
+
+ /* main */
+ .main {
+     padding: 50px 10%;
+     background-color: rgb(255, 255, 255);
+
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+
+ .nav-link {
+     width: 100%;
+     margin-bottom: 20px;
+ }
+
+ .container h2 {
+     margin-bottom: 20px;
+ }
+
+ .nav-link a {
+     text-decoration: none;
+     margin-right: 10px;
+ }
+
+ .container {
+     width: 60%;
+ }
+
+ .class {
+     width: 100%;
+ }
+
+ .item-date {
+     display: flex;
+     background-color: rgba(170, 163, 163, 0.2);
+     justify-content: space-between;
+     align-items: center;
+     padding: 3px 10px;
+     margin-bottom: 10px;
+     border-radius: 5px;
+     width: calc(100% - 50%);
+ }
+
+ .card-image {
+     padding: 30px 0;
+
+ }
+
+ .card-flex {
+     margin-top: 30px;
+ }
+
+ /* end card */
+
+ .form-container {
+     width: calc(100% - 50%);
+ }
+
+ .form-number {
+     width: 100%;
+ }
+
+ .card-number {
+     width: 100%;
+ }
+
+ .date-pass {
+     padding: 20px 0;
+     display: flex;
+     flex-wrap: wrap;
+     width: calc(100%);
+
+ }
+
+ .date-pass-end {
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+ }
+
+ .card-check {
+     width: calc(50% - 10px);
+ }
+
+
+
+ .button-form button {
+     font-size: 14px;
+     height: 45px;
+     background-color: rgba(9, 9, 255, 0.7);
+     color: #f3f6fb;
+     justify-content: center;
+     align-items: center;
+     border-radius: 20px;
+     margin-top: 20px;
+     border: none;
+ }
+
+ input[type="text"],
+ input[type="password"],
+ input[type="date"] {
+     border: none;
+     height: 40px;
+     width: 100%;
+     padding-left: 10px;
+     box-sizing: border-box;
+ }
+
+ input[type="checkbox"] {
+
+     height: 20px;
+     transform: scale(1.1);
+     margin-right: 5px;
+     accent-color: blue;
+ }
+
+
+ .check {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     border: 1px solid black;
+     border-radius: 3px;
+ }
+
+ .checkbox {
+     display: flex;
+     gap: 10px;
+     align-items: center;
+ }
+
+ .title {
+     flex: 1;
+     padding: 15px;
+
+ }
+
+ .star-title {
+     display: flex;
+     gap: 10px;
+ }
+
+ .title-hotel-img {
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ .hotel-check {
+     width: calc(50% - 10px);
+     padding: 10px 0;
+
+ }
+
+ .checkin-p {
+     border-top: 1px solid;
+     padding-top: 10px;
+     width: 100%;
+ }
+
+ .check-out {
+     padding-left: 20px;
+     border-left: 1px solid black;
+     margin-left: 10px;
+
+     padding-top: 10px;
+ }
+
+ .title {
+     border: 1px solid black;
+     padding: 15px;
+
+ }
+
+ .booked {
+     width: 100%;
+ }
+
+ .book-lists {
+     display: flex;
+     justify-content: space-between;
+     padding: 10px 0px;
+ }
+
+ .total:hover {
+     background-color: rgba(39, 36, 36, 0.2)
+ }
+
+ .star-title {
+     padding: 20px 0;
+ }
+
+ .figure {
+     padding: 20px 0;
+ }
+
+ .booked h3 {
+     padding: 20px 0;
+ }
+
+ .booked-title {
+     color: rgba(0, 0, 0, 0.5);
+     padding: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .section {
+     position: relative;
+     width: 100%;
+     height: 300px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .section-title {
+     color: #f3f6fb;
+     display: flex;
+     width: 35%;
+     flex-wrap: wrap;
+     gap: 20px;
+
+ }
+
+ .section-title p {
+     line-height: 1.5;
+ }
+
+ .position-text {
+     position: absolute;
+     width: calc(100% - 50%);
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .form-email {
+     border: none;
+     border-radius: 3px;
+     padding: 3px;
+     height: 40px;
+     display: flex;
+     background-color: #ffffff;
+     align-items: center;
+     line-height: 40px;
+ }
+
+ .subcribe {
+     display: flex;
+ }
+
+ .email input[type="email"] {
+     border: none;
+
+ }
+
+ .section-button button[type="submit"] {
+     background-color: black;
+     color: #f3f6fb;
+     height: 30px;
+     padding: 3px;
+ }
+
+ /* nnn */
+ .footer {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     margin-top: 50px;
+ }
+
+ .footer-box {
+     width: 60%;
+     display: flex;
+ }
+
+ .footer-logo {
+     width: 30%;
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+
+ }
+
+ .footer-logo img {
+     width: 150px;
+ }
+
+ .footer-contact {
+     flex: 1;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-end;
+     padding-right: 30px;
+
+ }
+
+ .col-contact {
+     margin-left: 15%;
+ }
+
+ .end {
+     margin-left: 20%;
+ }
+
+ .sum {
+     display: flex;
+     width: 100px;
+     height: 30px;
+     gap: 20px;
+     align-items: center;
+     justify-content: center;
+     background-color: rgba(235, 211, 211, 0.2);
+ }
+
+ .fas {
+     width: 50%;
+     height: 28px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .fas:hover {
+     border: 1px solid black;
+     background-color: rgba(163, 215, 197, 0.5);
+     margin: 3px;
+ }
