@@ -8,27 +8,23 @@
 </head>
 
 <body>
-    <script>
+   <script>
+        let width1 = 10;
+        let height1 = 5;
 
-        let width = 10;
-        let height = 5;
-        let result = "";
-        for (i = 1; i <= height; i++) {
+        for (let i = 1; i <= height1; i++) {
             let line = "";
-            for (j = 1; j <= width; j++) {
-                if (i === 1 || i === height || j === 1 || j === width) {
+            for (let j = 1; j <= width1; j++) {
+                if (i === 1 || i === height1 || j === 1 || j === width1) {
                     line += "*";
                 } else {
-                    line += " ";
+                    line += "         &nbsp;"; // Bắt buộc dùng &nbsp; nếu không có thẻ pre
                 }
-
-                result += line + "\n"; // Xuống dòng
             }
-            console.log(line)
-            document.write(line + "<br>"); // In ra trang web
+            document.write(line + "<br>");
         }
-
     </script>
 </body>
+
 
 </html>
