@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Bài toán khai báo mảng số nguyên có sẵn các phần tử từ 10 đến 20 phần tử, thực hiện nhập vào một số nguyên để kiểm tra (k), thực hiện đếm số lần xuất hiện của k trong mảng. và hiển thị ra màn hình -->
+    <script>
+        let number = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+        let numberInput = +prompt("Nhap vao 1 so");
+        let boolean = false;
+        let count = 0;
+        for (i = 0; i <= number.length; i++) {
+            if (numberInput == number[i]) {
+                boolean = true;
+                count++;
+            }
+        }
+        if (boolean == true) {
+            console.log(count);
+        } else {
+            console.log("so ko co trong mang")
+        }
+    </script>
+</body>
+
+</html>

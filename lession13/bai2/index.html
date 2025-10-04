@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //         Tạo mảng có sẵn với các phần tử số. Cho người dùng nhập vào một số bất kỳ, sau đó tiến hành kiểm tra:
+        // Nếu số đó có trong mảng cho sẵn thì alert(“Bingo”)
+        // Nếu số đó không có trong mảng cho sẵn thì alert(“Chúc bạn may mắn lần sau”)
+
+        let number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+        let search = +prompt("nhap vao 1 so bat ky tu 1 den 9");
+
+        let boolean = false;
+        for (i = 0; i < 9; i++) {
+            if (search == number[i]) {
+                boolean = true;
+            }
+        }
+        if (boolean == true) {
+            alert("Bingo");
+        } else {
+            alert("Chúc bạn may mắn lần sau");
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

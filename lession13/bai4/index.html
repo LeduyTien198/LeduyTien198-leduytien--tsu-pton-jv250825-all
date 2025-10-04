@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Hãy thực hiện cho người dùng nhập vào dãy số bất kỳ. Sử dụng split() để chuyển đổi kiểu dữ liệu từ string sang kiểu array. Tiến hành duyệt các phần tử và tìm ra phần tử có giá trị lớn nhất trong mảng và thực hiện in ra màn hình bằng alert() -->
+    <script>
+        let arr = prompt("Nhap vao 1 so bat ky: ");
+        let arrSplit = arr.split('');
+        let max = Number(arr[0]);
+        for (i = 0; i < arr.length; i++) {
+            if (max < arr[i]) {
+                max = arr[i];
+            }
+        }
+        alert(`${max}`);
+
+    </script>
+</body>
+
+</html>
