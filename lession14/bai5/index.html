@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //         Viết một chương trình quản lý danh sách sinh viên với các chức năng cơ bản sau:
+
+        // 1. Thêm sinh viên mới
+        // - Nhập tên, tuổi, mã số sinh viên (ID).
+        // - Thêm sinh viên vào danh sách.
+
+        // 2. Hiển thị danh sách sinh viên
+        // - Duyệt qua danh sách và in thông tin của từng sinh viên ra màn hình.
+
+        // 3. Xóa sinh viên theo ID
+        // - Nhập ID của sinh viên cần xóa.
+        // - Nếu ID tồn tại, xóa sinh viên khỏi danh sách.
+        // - Nếu ID không tồn tại, thông báo lỗi.
+        const studentList = [
+            {
+                id: 1,
+                name: "name 1",
+                age: 20,
+            },
+            {
+                id: 2,
+                name: "name2",
+                age: 20,
+            }
+        ];
+
+        while (true) {
+            let input = prompt("Chao ban. Moi ban nhap vao +/-/x/h ");
+
+            if (input === "+") {
+                const id = prompt("Moi ban nhap id vao");
+                const name = prompt("Moi ban nhap name vao");
+                const age = parseInt(prompt("Moi ban nhapp vao tuoi"));
+
+                let contact = {
+                    id: id,
+                    name: name,
+                    age: age,
+                }
+                studentList.push(contact);
+                displayContact();
+
+            } else if (input === "-") {
+                let id = prompt("Ban muon xoa sinh vien, vui long nhap id sv");
+                let index = studentList.findIndex(function (el) {
+                    return el.id == id;
+                })
+                if (index === -1) {
+                    console.log("id ko ton tai! ")
+                } else {
+                    studentList.splice(index, 1);
+                    console.log("xoa thanh cong!")
+                    displayContact();
+                }
+            } else if (input === "x") {
+                // displayContact();
+                console.log("cam on ban da su dung");
+                break;
+            } else if (input === "h") {
+                displayContact();
+                // de hien thi
+            }
+            else {
+                console.log("please input function !");
+            }
+        }
+
+
+        function displayContact() {
+            console.log("List students");
+            for (let index in studentList) {
+                console.log("id", studentList[index].id);
+                console.log("name", studentList[index].name);
+                console.log("age", studentList[index].age);
+                console.log("-----------------------")
+            }
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

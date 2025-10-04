@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let phoneList = [
+            {
+                id: 1,
+                name: "peter Parker",
+                phone: "18",
+            },
+            {
+                id: 2,
+                name: "tony Stark",
+                phone: "38",
+            }, {
+                id: 3,
+                name: "Steve Rogers",
+                phone: "80",
+            },
+
+        ];
+
+        // code
+        let userInput = prompt("Please input C/R/U/D/E to manage your phone list");
+        if (userInput === "C") {
+            //them moi 1 contact vao trong list
+            let name = prompt("Please input new contact name");
+            let phone = prompt(`Please input new phone for ${name}`);
+
+            let contact = {
+                id: Math.random(),
+                name: name,
+                phone: phone,
+            }
+            phoneList.push(contact);
+
+            displayContact();
+
+        } else if (userInput === "R") {
+            // hien thi ra nhung  phone co trong list
+            displayContact();
+        } else if (userInput === "U") {
+            // update - cap nhat lai so dien thoai cho 1 contact duocchi thi boi nguoi su dung
+        } else if (userInput === "D") {
+            // xoa 1 contact do nguoi dung su dung ung dung
+        } else if (userInput === "E") {
+            // dung chuong trinh
+        } else {
+            console.log("Invalid command");
+        }
+
+
+
+        // C / R
+        function displayContact() {
+            console.log("YOUR LIST PHONE")
+            for (let index in phoneList) {
+                console.log("name:", phoneList[index].name);
+                console.log("phone:", phoneList[index].phone);
+                console.log("--------------------------");
+            }
+
+        }
+
+
+        // console.log(studentList[0].id);
+        // console.log(studentList[0].name);
+        // console.log(studentList[0].age);
+
+
+        // for (let student of studentList) {
+        //     console.log("id", student.id);
+        //     console.log("name", student.name);
+        //     console.log("age", student.age);
+
+        // }
+
+
+
+
+
+
+
+
+
+
+
+        // object - doi tuong
+
+        // mo ta ve 1 thang nguoi
+        // ten :
+        // tuoi:
+        // que quan
+
+        // let person = {
+        //     name: "Peter",
+        //     age: 18,
+        //     hometown: "ha noi",
+        //     jop: "Lap trinh vien",
+        //     single: true,
+        //     hobbies: ["listening to music", "Reading Books"],
+        //     sayHi: function () {
+        //         console.log("Hello everyone");
+        //     },
+
+        // }
+
+
+
+
+
+        // xoa 1 thuoc tinh khoi 1 duoi tuong
+        // delete person.jop;
+        // console.log(person);
+
+
+        // cap nhat 1 thuoc tinh
+        // person.jop = "Chay grap";
+        // console.log(person);
+
+
+        // them moi 1 thuoc tinh
+
+        // person.weight = "50kg";
+        // person.height = "180";
+
+        // person.introduce = function () {
+        //     console.log("toi ten la peter");
+        // }
+        // console.log(person);
+
+
+
+
+        // backet notation
+        // dot not
+        // for (let key in person) {
+        //     console.log(person[key]);
+        // }
+
+
+
+        // console.log(person);
+
+        // console.log(person.name);//Peter
+
+        // console.log(person.hobbies);//[]
+
+
+        // console.log(person.sayHi());
+
+
+    </script>
+
+
+
+</body>
+
+</html>
