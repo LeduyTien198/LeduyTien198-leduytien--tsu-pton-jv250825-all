@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Bài 2: Tính giai thừa của một số nguyên dương
+        let n = +prompt("nhập vào số giai thừa cần tính");
+        if (n < 0) {
+            console.log("không thể tính giai thừa của số âm");
+        } else if (n === 0) {
+            console.log("giai thừa của số 0 là: 1");
+        } else {
+            let mulTip = 1;//2 6 24
+            for (i = 1; i < n; i++) {
+                mulTip = mulTip * i;//2 3 4
+            }
+            console.log(`Giai thừa của n = ${n} là: ${mulTip}`)
+        }
+    </script>
+</body>
+
+</html>

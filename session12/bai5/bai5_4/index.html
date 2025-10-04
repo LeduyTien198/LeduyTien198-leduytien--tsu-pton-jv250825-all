@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let width = 10;
+        let height = 5;
+        let result = "";
+        for (i = 1; i <= height; i++) {
+            let line = "";
+            for (j = 1; j <= width; j++) {
+                if (i === 1 || i === height || j === 1 || j === width) {
+                    line += "*";
+                } else {
+                    line += " ";
+                }
+
+                result += line + "\n"; // Xuống dòng
+            }
+            console.log(line)
+            document.write(line + "<br>"); // In ra trang web
+        }
+
+    </script>
+</body>
+
+</html>

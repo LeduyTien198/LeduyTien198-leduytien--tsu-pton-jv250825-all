@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng 30 số chia hết cho 7</title>
+</head>
+
+<body>
+    <script>
+        let count = 0;
+        let number = 0;
+        let tong = 0;
+        while (count < 30) {
+            if (number % 7 === 0) {
+                tong += number;
+                count++;
+            }
+            number++
+        }
+        console.log("Tổng 30 số chia hết cho 7 là: " + tong)
+    </script>
+</body>
+
+</html>

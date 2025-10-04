@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Bài 5: Tính tổng của 20 số đầu tiên trong dãy fibonacci. -->
+    <script>
+        let firstNumber = 0;
+        let secondNumber = 1;
+        let tong = firstNumber + secondNumber;
+        for (i = 2; i < 20; i++) {
+            let nextNumber = firstNumber + secondNumber;
+            tong = tong + nextNumber;
+
+            firstNumber = secondNumber;
+            secondNumber = nextNumber;
+            console.log(tong)
+        }
+    </script>
+</body>
+
+</html>

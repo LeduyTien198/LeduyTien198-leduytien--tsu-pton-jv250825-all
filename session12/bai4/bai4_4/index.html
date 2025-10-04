@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Bài 4: Tìm số đầu tiên trong dãy fibonacci chia hết cho 5.
+        let firstNumber = 0;
+        let secondNumber = 1;
+        let nextNumber;
+        while (true) {
+            nextNumber = firstNumber + secondNumber;
+            if (nextNumber % 5 === 0) {
+                console.log("Đây là số đầu tiên trong dãy fibonacci chia hết cho 5 là: " + nextNumber);
+                break;
+            }
+            firstNumber = secondNumber;
+            secondNumber = nextNumber;
+        }
+    </script>
+</body>
+
+</html>
