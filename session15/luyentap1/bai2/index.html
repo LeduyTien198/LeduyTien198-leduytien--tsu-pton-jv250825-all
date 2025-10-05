@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Bài 2: Viết chương trình khởi tạo nhập vào một mảng số nguyên gồm 10 phần tử khác nhau. Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.
+        let arr = []
+        for (i = 0; i < 10; i++) {
+            let num = (parseInt(prompt(`Nhap phan tu so ${i + 1}: vao day:`)))
+            while (isNaN(num)) {
+                num = parseInt(prompt(`Gia tri ko hop la vui long nhap lai phan tu so ${num} `))
+            }
+            arr.push(num)
+        }
+
+        function maxArr() {
+            let max = arr[0]
+            let index = []
+            for (i = 0; i < arr.length; i++) {
+                if (max < arr[i]) {
+                    max = arr[i]
+                }
+            }
+            for (i = 0; i < arr.length; i++) {
+                if (max == arr[i]) {
+                    max = arr[i]
+                    index.push(i)
+                }
+            }
+            console.log(`Phan tu lon nhat co vi tri tai ${max}`)
+            console.log(`Phan tu co vi tri tai ${index}`)
+        } maxArr()
+    </script>
+</body>
+
+</html>

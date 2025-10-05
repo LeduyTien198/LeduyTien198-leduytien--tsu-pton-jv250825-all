@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Bài 4: Viết chương trình khởi tạo nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó.
+
+        let arr = []
+        let n = parseInt(prompt("Ban muon nhap bao nhieu so vao day"))
+        while (isNaN(n) || n <= 0) {
+            n = parseInt(prompt("Nhap lai"))
+        }
+
+        for (let i = 0; i < n; i++) {
+            let num = parseInt(prompt("Nhap vao day gia tri cua cac phan tu"))
+            while (isNaN(n)) {
+                n = parseInt(prompt("Yeu cau nhap lai: so nguyen"))
+            }
+            arr.push(num)
+        }
+        arr.reverse()
+        console.log(arr)
+
+    </script>
+</body>
+
+</html>
