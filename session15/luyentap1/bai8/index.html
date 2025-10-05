@@ -1,0 +1,30 @@
+<script>
+    // Bài 8: Viết chương trình khởi tạo nhập vào 2 mảng số nguyên gồm 10 phần tử,
+    //  gọi là mảng a và b. Mảng c là một mảng được khai báo gồm 20 phần tử số nguyên
+    // . Chương trình sẽ lưu các phần tử được nối từ hai mảng b và a vào mảng c. Hiển thị mảng c
+    // 
+
+    let a = []
+    let b = []
+
+    for (let i = 0; i < 10; i++) {
+        let num = parseInt(prompt("input x number"))
+        while (isNaN(num)) {
+            num = parseInt(prompt("please input x number"))
+        }
+        a.push(num)
+    }
+
+    for (let i = 0; i < 20; i++) {
+        let num = parseInt(prompt("input x number"))
+        while (isNaN(num)) {
+            num = parseInt(prompt("please input x number"))
+        }
+        b.push(num)
+    }
+
+    let c = a.concat(b)
+    console.log(a)
+    console.log(b)
+    console.log(c)
+</script>
