@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Đăng nhập</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 100;
+
+        }
+
+        body {
+            background-image: url("https://suachualaptop24h.com/upload_images/images/2021/05/02/2561184c0d83292e2814a8db5dfe49e1.jpg");
+            background-size: cover;
+            /* background-repeat: no-repeat; */
+            background-position: center;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 50px;
+            padding: 50px;
+            color: white;
+        }
+
+        .container-form {
+            max-width: 400px;
+            margin: auto;
+            margin-bottom: 60px;
+        }
+
+
+        .title-login {
+            width: 300px;
+            background-color: rgb(51, 181, 229);
+            padding: 15px;
+            margin: auto;
+            color: white;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 255);
+            display: inline-block;
+            width: 300px;
+
+
+        }
+
+        .text-submit {
+            margin-top: 30px;
+        }
+
+        input,
+        button {
+            width: 250px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 3px;
+            border: 1px solid rgb(230, 230, 230)
+        }
+
+        button {
+            background-color: rgb(239, 77, 77);
+            color: white;
+            border: none;
+        }
+
+        .items-link {
+            display: inline-flex;
+            gap: 10px;
+        }
+
+        .link-fb i {
+            color: rgb(108, 131, 178);
+        }
+
+        .link-tw i {
+            color: rgb(128, 193, 242);
+        }
+
+        .link-gg i {
+            color: rgb(229, 120, 107);
+        }
+
+        .qr {
+            margin: 10px;
+            color: rgb(147, 215, 241);
+        }
+
+        p {
+            color: rgb(230, 230, 230);
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(51, 181, 229);
+            ;
+        }
+
+        .content-support {
+            line-height: 25px;
+            margin: 15px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ELEGANT LOGIN FORM</h1>
+    <div class="container-form">
+        <form action="" method="post" onsubmit="login(event)">
+            <div class="title-login">LOG IN</div>
+            <div class="text-submit">
+                <input type="email" id="email" placeholder="Email" />
+            </div>
+            <div>
+                <input type="password" id="password" placeholder="Password" />
+            </div>
+            <button type="submit">Submit</button>
+            <div class="qr">QR</div>
+            <div class="items-link">
+                <div class="link-fb">
+                    <a href="https://fb.com" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+
+                <div class="link-tw">
+                    <a href="https://twitch.com" target="_blank">
+                        <i class="fa-brands fa-twitch"></i>
+                    </a>
+                </div>
+
+                <div class="link-gg">
+                    <a href="https://google.com" target="_blank">
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="content-support">
+                <p>No account yet? <span><a href="#">SignUp</a></span></p>
+                <a href="">Forgot your password?</a>
+            </div>
+        </form>
+    </div>
+    <p>2017 Elegant Login Form. All Rights Reserved | Design by W3layout</p>
+    <script>
+        function login(event) {
+            event.preventDefault();
+            let emails = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+
+            if (emails === "huanrose@gmail.com" && password === "123456") {
+                alert("ĐĂNG NHẬP THÀNH CÔNG");
+            } else {
+                alert("ĐĂNG NHẬP THẤT BẠI");
+            }
+        }
+    </script>
+</body>
+
+</html>

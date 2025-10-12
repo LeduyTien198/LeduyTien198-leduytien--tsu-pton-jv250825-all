@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //     Viết một hàm isEven nhận vào một số và trả về true nếu số đó là số chẵn, ngược lại trả về false.
+
+        // Yêu cầu người dùng nhập vào 1 số nguyên bất kỳ bằng hàm prompt()
+        // Hiển thị kết quả bằng alert()
+
+        let number = +prompt("Nhập vào số cần kt");
+        let result = isEven(number);
+        alert(`Kết quả là: ${result}`)
+
+        function isEven(number) {
+            if (number % 2 === 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px 10px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <script>
+        // bai1 Bài 1: Tạo một đối tượng chứa thông tin về một người bao gồm 
+        // tên, tuổi, địa chỉ và số điện thoại.
+        //  Sau đó truy xuất các thuộc tính của đối tượng trên
+        let person = {
+            name: "Tiến",
+            age: 26,
+            add: "Aichi",
+            phone: "01234567",
+        }
+
+        console.log(person.name)
+        console.log(person.age)
+        console.log(person.add)
+        console.log(person.phone)
+    </script>
+
+
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script>
+        let students = [];
+        let student = {
+            id: 1,
+            name: "Nguyễn Văn A",
+            gender: "Nam",
+            age: 20,
+            mark: 8,
+        };
+        students.push(student);
+
+        let tbody = document.getElementById("#tableStudent tbody")
+        students
+
+    </script>
+
+</body>
+
+</html>
